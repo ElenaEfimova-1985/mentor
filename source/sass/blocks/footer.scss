@@ -1,0 +1,93 @@
+.footer {
+  background-color: $generalgrey;
+  padding: 41px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 68px 0;
+  }
+}
+
+.footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__link {
+  display: block;
+  border-bottom: 1px solid $silvergrey;
+  text-align: center;
+  padding: 0 0 16px 0;
+  color: $additionalgrey;
+  transition: 0.3s;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $eclipse;
+    outline: none;
+  }
+
+  &:active {
+    color: $lightdimgrey;
+  }
+}
+
+.footer__link-logo {
+  @media (min-width: $tablet-width) {
+    width: 143px;
+    height: 26px;
+  }
+}
+
+
+.footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $dimgrey;
+  padding: 20px 0 0;
+  transition: 0.3s;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    max-width: 200px;
+  }
+}
+
+.footer__copyright-link:hover,
+.footer__copyright-link:focus-within {
+  color: $green;
+  outline: none;
+}
+
+.footer__copyright-link:active {
+  opacity: 0.3;
+}
+
+
+.footer__copyright-text {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 19px;
+  color: $darkgrey;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 28px 0 0;
+  }
+}
+
+.footer__copyright-icon {
+  flex-shrink: 0;
+}

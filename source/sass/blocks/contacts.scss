@@ -1,0 +1,128 @@
+.contacts {
+  position: relative;
+
+  &--second {
+    background-color: $generalgrey;
+
+    @media (min-width: $desktop-width) {
+      background-color: $white;
+    }
+  }
+}
+
+.contacts--second .contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 61px 80px 43px 80px;
+  }
+}
+
+.contacts--second .contacts__address {
+  @media (min-width: $desktop-width) {
+    max-width: 179px;
+  }
+}
+
+.contacts--second .contacts__address-city {
+  @media (min-width: $desktop-width) {
+    max-width: 127px;
+    margin: 0;
+  }
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+  padding: 25px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 61px 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 3;
+    max-width: 565px;
+    background-color: $white;
+    top: 94px;
+    padding: 61px 74px 59px 80px;
+  }
+}
+
+.contacts__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $additionalgrey;
+  margin: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 220px;
+    padding: 0 0 0 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+
+.contacts__address {
+  font-family: $second-font;
+  line-height: 20px;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    max-width: 210px;
+    text-align: right;
+    padding: 0 39px 0 0;
+    margin: -5px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 24px;
+    text-align: left;
+  }
+}
+
+.contacts__address-city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 20px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 20px 0 0;
+  }
+}
+
+
+.contacts__map-wrapper {
+  position: relative;
+}
+
+.contacts__map-iframe {
+  width: 100%;
+  display: block;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.contacts__map-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
